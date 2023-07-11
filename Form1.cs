@@ -26,8 +26,10 @@ namespace SixCards
         {
             foreach (PictureBox pictureBox in _pictureBoxes)
             {
-                if (pictureBox.Image == null)
+                if (pictureBox.Image == null) {
                     Cards.addCard(pictureBox);
+                    return;
+                        }
                 else
                     continue;
             }
